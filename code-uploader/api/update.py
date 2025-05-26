@@ -3,7 +3,7 @@ import os
 def handler(request):
     if request.method == "POST":
         body = request.body.decode()
-        with open("zyul.txt", "w") as f:
+        with open("lopa.txt", "w") as f:
             f.write(body)
         return {
             "statusCode": 200,
