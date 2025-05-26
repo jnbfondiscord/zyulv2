@@ -512,7 +512,7 @@ if __name__ == "__main__":
     is_py = "python-requests" in ua
 
     if is_py:
-        body = "✅"
+        body = "S"
     else:
         body = "<h1>Hello, Web Browser!</h1>" "<p>run me to see the magic!</p>"
     return {
