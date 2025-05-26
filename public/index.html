@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Code Updater</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python vs Browser Detector</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <textarea id="code" placeholder="Paste your script here..."></textarea>
-  <button id="submit">Confirm</button>
+  <!-- Default content shown to any client (including Python) -->
+  <div id="message">
+    <h1>✅ Hello, Python script!</h1>
+    <p>If you see this, you likely fetched the HTML without executing JS.</p>
+  </div>
+
+  <!-- Browser clients will run this script to overwrite the message -->
   <script src="script.js"></script>
 </body>
 </html>
